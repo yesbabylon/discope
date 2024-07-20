@@ -1,0 +1,28 @@
+{
+    "name": "Cashdesk Logs",
+    "description": "This view is intended for displaying the list of cashdesk logs.",
+    "layout": {
+        "items": [
+            {
+                "type": "field",
+                "value": "date",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "value": "amount",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "value": "user_id",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "value": "cashdesk_id",
+                "width": "20%"
+            }
+        ]
+    }
+}

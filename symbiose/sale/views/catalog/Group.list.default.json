@@ -1,0 +1,19 @@
+{
+    "name": "Groups",
+    "description": "This view is intended for displaying the list of product groups.",
+    "layout": {
+        "items": [
+            {
+                "type": "field",
+                "value": "name",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "label": "Product Model",
+                "value": "product_models_ids",
+                "width": "20%"
+            }
+        ]
+    }
+}

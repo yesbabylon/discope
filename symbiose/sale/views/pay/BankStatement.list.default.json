@@ -1,0 +1,23 @@
+{
+    "name": "Bank Statements",
+    "description": "This view is intended for displaying the list of bank statements.",
+    "layout": {
+        "items": [
+            {
+                "type": "field",
+                "value": "name",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "value": "reference_name",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "value": "date",
+                "width": "20%"
+            }
+        ]
+    }
+}

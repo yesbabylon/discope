@@ -1,0 +1,13 @@
+{
+    "name": "Cashdesks",
+    "description": "This view is intended for displaying the list of cashdesks.",
+    "layout": {
+        "items": [
+            {
+                "type": "field",
+                "value": "name",
+                "width": "20%"
+            }
+        ]
+    }
+}

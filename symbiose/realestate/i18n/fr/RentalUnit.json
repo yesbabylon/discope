@@ -1,0 +1,95 @@
+{
+	"name": "Unité locative",
+	"plural": "Unités locatives",
+	"description": "Une unité locative est une ressource qui peut être louée à un client.",
+	"model": {
+		"name": {
+			"label": "Nom",
+			"description": "Nom de l'untié.",
+			"help": ""
+		},
+		"type": {
+			"label": "Type",
+			"description": "Type d'unité locative (en lien avec la capacité).",
+			"selection": {
+				"building": "Bâtiment",
+				"bedroom": "Chambre",
+				"bed": "Lit",
+				"meetingroom": "Salle de réunion",
+				"diningroom": "Réfectoire",
+				"room": "Salle",
+				"FFE": "Mobilier, accessoires et équipement"
+			},
+			"help": ""
+		},
+		"category": {
+			"label": "Catégorie",
+			"description": "Type d'unité locative (qui comprend généralement des logements supplémentaires, c'est-à-dire des repas ; ou louée telle quelle).",
+			"selection": {
+				"hostel": "GA",
+				"lodge": "GG"
+			},
+			"help": ""
+		},
+		"capacity": {
+			"label": "Capacité",
+			"description": "Le nombre de personnes pouvant séjourner dans l'unité.",
+			"help": ""
+		},
+		"has_children": {
+			"label": "Sous-unités ?",
+			"description": "Drapeau indiquant que l'unité a des sous-unités.",
+			"help": ""
+		},
+		"can_rent": {
+			"label": "Peut être loué",
+			"description": "Drapeau pour marquer l'unité comme (temporairement) indisponible à la location.",
+			"help": ""
+		},
+		"children_ids": {
+			"label": "Sous-unités",
+			"description": "La liste des unités locatives dans lesquelles l'unité actuelle peut être divisée, le cas échéant (c'est-à-dire qu'un dortoir peut être loué en tant que lits individuels).",
+			"help": ""
+		},
+		"parent_id": {
+			"label": "Unité parente",
+			"description": "Unité de location à laquelle appartient l'unité actuelle, le cas échéant.",
+			"help": ""
+		}
+	},
+	"view": {
+		"form.default": {
+			"name": "Unité locative",
+			"description": "Une unité locative est une ressource qui peut être louée à un client.",
+			"layout": {
+				"section.rental_units": {
+					"label": "Détails"
+				},
+				"section.children_section": {
+					"label": "Sous-unités"
+				}
+			}
+		},
+		"list.default": {
+			"name": "Liste des Unités locatives",
+			"description": "Cette vue est destinée à afficher la liste des unités locatives.",
+			"layout": {
+
+			}
+		}
+	},
+	"error": {
+        "name": {
+            "missing_mandatory": "Champ obligatoire."
+        },
+        "type": {
+            "missing_mandatory": "Champ obligatoire."
+        },
+        "category": {
+            "missing_mandatory": "Champ obligatoire."
+        },
+        "capacity": {
+            "lte_zero": "Doit être une valeur positive."
+        }		
+	}
+}

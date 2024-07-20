@@ -1,0 +1,19 @@
+{
+    "name": "Payment Plans",
+    "description": "This view is intended for displaying the list of payment plans.",
+    "layout": {
+        "items": [
+            {
+                "type": "field",
+                "value": "name",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "label": "Class Rate",
+                "value": "rate_class_id",
+                "width": "20%"
+            }
+        ]
+    }
+}

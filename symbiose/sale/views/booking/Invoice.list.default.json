@@ -1,0 +1,29 @@
+{
+    "name": "Invoices",
+    "description": "This view is intended for displaying the list of invoices.",
+    "layout": {
+        "items": [
+            {
+                "type": "field",
+                "value": "name",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "label": "Booking",
+                "value": "booking_id",
+                "width": "10%"
+            },
+            {
+                "type": "field",
+                "value": "status",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "value": "date",
+                "width": "20%"
+            }
+        ]
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "name": "Contract Lines",
+    "description": "This view is intended for displaying the list of contract lines.",
+    "layout": {
+        "items": [
+            {
+                "type": "field",
+                "value": "name",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "label": "Contract",
+                "value": "contract_id",
+                "width": "10%"
+            },
+            {
+                "type": "field",
+                "value": "price",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "value": "vat_rate",
+                "width": "10%"
+            },
+            {
+                "type": "field",
+                "label": "Quantity",
+                "value": "qty",
+                "width": "10%"
+            }
+        ]
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "name": "Price List",
+    "description": "This view is intended for displaying the list of prices.",
+    "layout": {
+        "items": [
+            {
+                "type": "field",
+                "value": "name",
+                "width": "30%"
+            },
+            {
+                "type": "field",
+                "label": "Product",
+                "value": "product_id",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "value": "price_list_id",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "value": "price",
+                "width": "20%",
+                "sortable": true
+            },
+            {
+                "type": "field",
+                "value": "is_active",
+                "width": "10%",
+                "sortable": true
+            }
+        ]
+    }
+}

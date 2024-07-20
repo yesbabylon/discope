@@ -1,0 +1,33 @@
+{
+    "name": "Contacts",
+    "description": "This view is intended for displaying the list of contacts.",
+    "layout": {
+        "items": [
+            {
+                "type": "field",
+                "label": "Name",
+                "value": "name",
+                "width": "50%",
+                "widget": {
+                    "header": true
+                }
+            },
+            {
+                "type": "field",    
+                "label": "Booking",        
+                "value": "booking_id",
+                "width": "20%"
+            },
+            {
+                "type": "field",            
+                "value": "type",
+                "width": "20%"
+            },
+            {
+                "type": "field",            
+                "value": "relationship",
+                "width": "20%"
+            }
+        ]
+    }
+}

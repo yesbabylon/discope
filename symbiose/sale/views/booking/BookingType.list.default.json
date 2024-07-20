@@ -1,0 +1,19 @@
+{
+    "name": "Booking Types",
+    "description": "This view is intended for displaying the list of booking types.",
+    "layout": {
+        "items": [
+            {
+                "type": "field",
+                "value": "name",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "label": "Product Category",
+                "value": "product_categories_ids",
+                "width": "20%"
+            }
+        ]
+    }
+}

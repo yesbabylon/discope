@@ -1,0 +1,43 @@
+{
+    "name": "Products",
+    "description": "This view is intended for displaying the list of products.",
+    "order": "sku,product_model_id",
+    "sort": "asc",
+    "layout": {
+        "items": [
+            {
+                "type": "field",
+                "value": "name",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "value": "sku",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "label": "Product Model",
+                "value": "product_model_id",
+                "width": "20%",
+                "sortable": true
+            },
+            {
+                "type": "field",
+                "value": "is_pack",
+                "width": "20%",
+                "sortable": true
+            },
+            {
+                "type": "field",
+                "value": "can_sell",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "value": "family_id",
+                "width": "20%"
+            }
+        ]
+    }
+}

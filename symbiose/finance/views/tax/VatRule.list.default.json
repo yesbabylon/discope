@@ -1,0 +1,23 @@
+{
+    "name": "Vat Rules List",
+    "description": "This view is intented for displaying the VAT rules.",
+    "layout": {
+        "items": [
+            {
+                "type": "field",            
+                "value": "name",
+                "width": "20%"
+            }, 
+            {
+                "type": "field",            
+                "value": "rate",
+                "width": "20%"
+            },
+            {
+                "type": "field",            
+                "value": "type",
+                "width": "20%"
+            }
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "name": "Accounting Rule Line List",
+    "description": "This view is intented for displaying the list accounting rule lines.",
+    "layout": {
+        "items": [
+            {
+                "type": "field",
+                "value": "name",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "value": "account",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "value": "analytic_section_id",
+                "width": "20%"
+            }
+        ]
+    }
+}

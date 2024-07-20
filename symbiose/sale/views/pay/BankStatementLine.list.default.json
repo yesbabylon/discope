@@ -1,0 +1,40 @@
+{
+    "name": "Bank Statement Lines",
+    "description": "This view is intended for displaying the list of bank statement lines.",
+    "layout": {
+        "items": [
+            {
+                "type": "field",
+                "value": "name",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "label": "Bank Statement",
+                "value": "bank_statement_id",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "value": "date",
+                "width": "10%"
+            },
+            {
+                "type": "field",
+                "value": "amount",
+                "width": "10%"
+            },
+            {
+                "type": "field",
+                "label": "Customer",
+                "value": "customer_id",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "value": "account_holder",
+                "width": "20%"
+            }
+        ]
+    }
+}

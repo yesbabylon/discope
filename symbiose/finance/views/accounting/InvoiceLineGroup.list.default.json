@@ -1,0 +1,19 @@
+{
+    "name": "Invoice Line Groups",
+    "description": "This view is intented for displaying the invoice line groups.",
+    "layout": {
+        "items": [
+            {
+                "type": "field",
+                "value": "name",
+                "width": "20%"
+            },
+            {
+                "type": "field",
+                "label": "Invoice",
+                "value": "invoice_id",
+                "width": "20%"
+            }
+        ]
+    }
+}

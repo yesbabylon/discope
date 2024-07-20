@@ -1,0 +1,18 @@
+{
+    "name": "Booking Followups",
+    "description": "This view is intended for displaying the list of booking followups.",
+    "layout": {
+        "items": [
+            {
+                "type": "field",            
+                "value": "creator",
+                "width": "20%"
+            },
+            {
+                "type": "field",            
+                "value": "message",
+                "width": "30%"
+            }
+        ]
+    }
+}
