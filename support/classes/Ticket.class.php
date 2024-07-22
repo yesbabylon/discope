@@ -70,7 +70,7 @@ class Ticket extends Model {
             ],
 
             'description' => [
-                'type'              => 'text',
+                'type'              => 'string',
                 'usage'             => 'plain/text',
                 'description'       => "Message of the first entry.",
                 'onupdate'          => 'onupdateDescription'

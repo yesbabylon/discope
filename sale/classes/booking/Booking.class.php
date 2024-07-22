@@ -394,9 +394,12 @@ class Booking extends Model {
 
         if($bookings > 0) {
             foreach($bookings as $bid => $booking) {
-                $result[$bid] = array_reduce($booking['booking_lines_groups_ids.nb_pers'], function ($c, $group) {
-                    return $c + $group['nb_pers'];
-                }, 0);
+                $result[$bid] = 0;
+                if($booking['booking_lines_groups_ids.nb_pers']) {
+                    $result[$bid] = array_reduce($booking['booking_lines_groups_ids.nb_pers'], function ($c, $group) {
+                        return $c + $group['nb_pers'];
+                    }, 0);
+                }
             }
         }
         return $result;
@@ -416,10 +419,13 @@ class Booking extends Model {
         $bookings = $om->read(get_called_class(), $oids, ['booking_lines_groups_ids.price']);
         if($bookings > 0) {
             foreach($bookings as $bid => $booking) {
-                $price = array_reduce($booking['booking_lines_groups_ids.price'], function ($c, $group) {
-                    return $c + $group['price'];
-                }, 0.0);
-                $result[$bid] = round($price, 2);
+                $result[$bid] = 0;
+                if($booking['booking_lines_groups_ids.price']) {
+                    $price = array_reduce($booking['booking_lines_groups_ids.price'], function ($c, $group) {
+                        return $c + $group['price'];
+                    }, 0.0);
+                    $result[$bid] = round($price, 2);
+                }
             }
         }
         return $result;

@@ -72,7 +72,7 @@ class Identity extends Model {
                 'onchange'          => 'identity\Identity::onchangeName'
             ],
             'description' => [
-                'type'              => 'text',
+                'type'              => 'string',
                 'description'       => 'A short reminder to help user identify the organisation (e.g. "Human Resources Consultancy Firm").'
             ],
             'has_vat' => [  

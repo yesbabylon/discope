@@ -178,7 +178,7 @@ class Order extends Model {
                         // create new entries objects
                         foreach($orders_accounting_entries as $oid => $accounting_entries) {
                             foreach($accounting_entries as $entry) {
-                                $om->create(AccountingEntry::getType(), $entry);
+                                $om->create(\finance\accounting\AccountingEntry::getType(), $entry);
                             }
                         }
                     }

@@ -27,8 +27,8 @@ class Booking extends Model {
             ],
             
             'description' => [
-                'type'              => 'text',
-                'usage'             => '',
+                'type'              => 'string',
+                'usage'             => 'text/plain',
                 'description'       => "Reason of the booking, for internal use.",
                 'default'           => ''
             ],
