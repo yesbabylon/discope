@@ -183,7 +183,6 @@ class CashdeskSession extends Model {
                             'type'          => 'move',
                             'description'   => 'cashdesk closing'
                         ], $lang);
-
                     }
                 }
             }

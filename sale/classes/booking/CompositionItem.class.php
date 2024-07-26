@@ -48,6 +48,11 @@ class CompositionItem extends Model {
                 'description'       => 'Place of birth of the person (city, country).'
             ],
 
+            'citizen_identification' => [
+                'type'              => 'string',
+                'description'       => 'Citizen registration number, if any.'
+            ],
+
             /* some legal constraints might apply, in which case we need extra contact details */
             'email' => [
                 'type'              => 'string',

@@ -33,6 +33,11 @@
             "description": "Date de naissance.",
             "help": ""
         },
+        "citizen_identification": {
+            "label": "Registre National",
+            "description": "Numéro de registre national.",
+            "help": ""
+        },
         "place_of_birth": {
             "label": "Lieu de naissance",
             "description": "Lieu de naissance (ville, pays).",

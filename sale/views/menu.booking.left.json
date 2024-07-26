@@ -61,7 +61,7 @@
                         "context": {
                             "entity": "lodging\\sale\\booking\\Booking",
                             "view": "list.default",
-                            "domain": ["status", "=", "confirmed"]
+                            "domain": ["status", "in", ["confirmed", "validated"]]
                         }
                     },
                     {
