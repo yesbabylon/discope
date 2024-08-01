@@ -275,9 +275,12 @@ class BookingLineGroup extends Model {
         $groups = $om->read(get_called_class(), $oids, ['booking_lines_ids.fare_benefit']);
 
         foreach($groups as $oid => $group) {
-            $result[$oid] = array_reduce($group['booking_lines_ids.fare_benefit'], function ($c, $a) {
-                return $c + $a['fare_benefit'];
-            }, 0.0);
+            $result[$oid] = 0.0;
+            if(count($group['booking_lines_ids.fare_benefit'])) {
+                $result[$oid] = array_reduce($group['booking_lines_ids.fare_benefit'], function ($c, $a) {
+                        return $c + $a['fare_benefit'];
+                    }, 0.0);
+            }
         }
 
         return $result;
